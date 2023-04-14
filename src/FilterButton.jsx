@@ -21,11 +21,7 @@ export function FilterButton({
       } w-full`}
       onClick={handleClick}
     >
-      <img
-        className="mx-auto"
-        style={{ width: "20px" }}
-        src={`/assets/${imgSrc}.png`}
-      />
+      <img className="mx-auto" style={{ width: "20px" }} src={imgSrc} />
     </button>
   );
 }
