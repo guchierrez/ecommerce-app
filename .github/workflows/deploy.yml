@@ -28,7 +28,7 @@ jobs:
       - name: Copy database file and assets
         run: |
           cp products.json dist/
-          cp -r /assets dist/
+          cp -r assets dist/
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
