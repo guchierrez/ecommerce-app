@@ -13,16 +13,14 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          node-version: "16"
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "16.x"
+          node-version: 16
 
       - name: Install dependencies
-        run: npm install
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
