@@ -1,0 +1,38 @@
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+
+  20% {
+    background-position: right;
+  }
+
+  40% {
+    background-position: left;
+  }
+
+  60% {
+    background-position: right;
+  }
+
+  80% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+header {
+  animation-name: bg-animation;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(100, 000, 000, 1),
+    rgba(100, 200, 100, 1),
+    rgba(000, 000, 100, 1),
+    rgba(100, 000, 000, 1)
+  );
+  background-size: 600%;
+  animation: bg-animation 120s infinite alternate;
+}
