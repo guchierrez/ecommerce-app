@@ -4,7 +4,7 @@ export function FilterButtons({ handleCategorySelect, selectedCategory }) {
   const all = {
     handleCategorySelect: handleCategorySelect,
     name: "ALL",
-    imgSrc: "/assets/cart.png",
+    imgSrc: "assets/cart.png",
     category: "all",
     selectedCategory: selectedCategory,
   };
@@ -12,7 +12,7 @@ export function FilterButtons({ handleCategorySelect, selectedCategory }) {
   const pc = {
     handleCategorySelect: handleCategorySelect,
     name: "PC",
-    imgSrc: "/assets/pc.png",
+    imgSrc: "assets/pc.png",
     category: "pc",
     selectedCategory: selectedCategory,
   };
@@ -20,7 +20,7 @@ export function FilterButtons({ handleCategorySelect, selectedCategory }) {
   const hardware = {
     handleCategorySelect: handleCategorySelect,
     name: "HARDWARE",
-    imgSrc: "/assets/hardware.png",
+    imgSrc: "assets/hardware.png",
     category: "hardware",
     selectedCategory: selectedCategory,
   };
@@ -28,7 +28,7 @@ export function FilterButtons({ handleCategorySelect, selectedCategory }) {
   const software = {
     handleCategorySelect: handleCategorySelect,
     name: "SOFTWARE",
-    imgSrc: "/assets/software.png",
+    imgSrc: "assets/software.png",
     category: "software",
     selectedCategory: selectedCategory,
   };
@@ -36,7 +36,7 @@ export function FilterButtons({ handleCategorySelect, selectedCategory }) {
   const peripheral = {
     handleCategorySelect: handleCategorySelect,
     name: "PERIPHERALS",
-    imgSrc: "/assets/peripheral.png",
+    imgSrc: "assets/peripheral.png",
     category: "peripheral",
     selectedCategory: selectedCategory,
   };
