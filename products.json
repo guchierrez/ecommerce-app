@@ -4,139 +4,139 @@
     "description": "Powerful machine. With this setup, you can play all current games on medium to high graphics settings.",
     "price": 659999,
     "category": "pc",
-    "image": "./products/product0.png"
+    "image": "./src/assets/products/product0.png"
   },
   {
     "name": "GAMING PC IGNIS",
     "description": "With Ignis, you can take your gameplay to the next level. This setup is capable of running all current games at maximum graphic settings.",
     "price": 765900,
     "category": "pc",
-    "image": "./products/product1.png"
+    "image": "./src/assets/products/product1.png"
   },
   {
     "name": "RAZER KRAKEN PRO 7.1",
     "description": "The Razer Kraken Gamer Headset is a go-to for gamers who enjoy a more realistic and immersive game, with sound details that involve and make the gaming experience even more enjoyable and complete.",
     "price": 89999,
     "category": "peripheral",
-    "image": "./products/product2.png"
+    "image": "./src/assets/products/product2.png"
   },
   {
     "name": "RAZER KRAKEN PRO TOURNAMENT EDITION",
     "description": "The Razer Kraken Tournament Edition Gamer Headset was designed with extreme comfort, sound quality, and versatility in mind, with compatibility for the main current consoles and accessories to meet the most demanding users.",
     "price": 56900,
     "category": "peripheral",
-    "image": "./products/product3.png"
+    "image": "./src/assets/products/product3.png"
   },
   {
     "name": "RAZER DEATHADDER CHROMA V2",
     "description": "See with your own eyes the rebirth of an icon with the Razer DeathAdder V2, an ergonomic mouse designed with deadly curves and aggressive lines, a weapon that handles like no other. With next-generation sensor and switches within a lighter form factor, it shapes a new era of high performance in gaming.",
     "price": 89999,
     "category": "peripheral",
-    "image": "./products/product4.png"
+    "image": "./src/assets/products/product4.png"
   },
   {
     "name": "RAZER CYNOSA V2 - KEYBOARD",
     "description": "Paint your game with truly immersive lighting with the Razer Cynosa V2 - the essential RGB gaming keyboard. With customizable lighting on every key, watch it come to life while playing in titles integrated with Chroma and adopt a gaming experience you'll never want to leave.",
     "price": 27999,
     "category": "peripheral",
-    "image": "./products/product5.png"
+    "image": "./src/assets/products/product5.png"
   },
   {
     "name": "INTEL CORE I7 11700F 11th GENERATION",
     "description": "11th generation Intel Core i7 processor, with 8 cores up to 4.8Ghz.",
     "price": 21900,
     "category": "hardware",
-    "image": "./products/product6.png"
+    "image": "./src/assets/products/product6.png"
   },
   {
     "name": "INTEL CORE I9 13900KF 13ª GERAÇÃO",
     "description": "Intel Core i9 processor of the thirteenth generation, featuring 24 cores up to 5.7Ghz.",
     "price": 179700,
     "category": "hardware",
-    "image": "./products/product7.png"
+    "image": "./src/assets/products/product7.png"
   },
   {
     "name": "INTEL CORE I7 X-SERIES",
     "description": "Processor Intel Core i7, with 24 cores of up to 5.8Ghz.",
     "price": 399900,
     "category": "hardware",
-    "image": "./products/product8.png"
+    "image": "./src/assets/products/product8.png"
   },
   {
     "name": "AMD RYZEN 5 4600G",
     "description": "The AMD Ryzen 5 4600G features 6 cores and 12 threads, boosting your computer's performance with clock speeds of up to 4.2 GHz with Max Boost and 8MB of total L3 cache.",
     "price": 27600,
     "category": "hardware",
-    "image": "./products/product9.png"
+    "image": "./src/assets/products/product9.png"
   },
   {
     "name": "AMD RYZEN 7 5700X",
     "description": "AMD Ryzen processors and AMD Radeon graphics cards with Windows enable the ultimate gaming experience through superior graphics, incredible performance, optimized security features, and support for the latest features.",
     "price": 59999,
     "category": "hardware",
-    "image": "./products/product10.png"
+    "image": "./src/assets/products/product10.png"
   },
   {
     "name": "AMD RYZEN 7 5800X",
     "description": "The AMD Ryzen 7 5800X3D is the first desktop processor with L3 cache, offering an unparalleled 96 MB of L3 cache paired with incredibly fast cores to create the world's fastest gaming processor.",
     "price": 134900,
     "category": "hardware",
-    "image": "./products/product11.png"
+    "image": "./src/assets/products/product11.png"
   },
   {
     "name": "RAM RGB 8GB TRIDENTZ",
     "description": "TRIDENTZ DDR4 memory provides a powerful performance boost for gaming, video editing, and rendering.",
     "price": 21400,
     "category": "hardware",
-    "image": "./products/product12.png"
+    "image": "./src/assets/products/product12.png"
   },
   {
     "name": "RAM 16GB (8X2) KINGSTON",
     "description": "Kingston FURY Beast DDR4 memory provides a powerful performance boost for gaming, video editing, and more.",
     "price": 21900,
     "category": "hardware",
-    "image": "./products/product13.png"
+    "image": "./src/assets/products/product13.png"
   },
   {
     "name": "MICROSOFT OFFICE 365",
     "description": "Office Home & Student helps you create content and work together with your family using productivity tools.",
     "price": 21900,
     "category": "software",
-    "image": "./products/product14.png"
+    "image": "./src/assets/products/product14.png"
   },
   {
     "name": "NVIDIA RTX 3050",
     "description": "The GeForce RTX 3050 was developed with the powerful graphical performance of the NVIDIA Ampere architecture. It features 2nd generation RT Cores and 3rd generation dedicated Tensor Cores, new streaming multiprocessors and has 8GB of high-speed GDDR6 memory, as well as a 14Gbps speed to tackle the most current games.    ",
     "price": 219900,
     "category": "hardware",
-    "image": "./products/product15.png"
+    "image": "./src/assets/products/product15.png"
   },
   {
     "name": "NVIDIA RTX 3060",
     "description": "Equipped with twin 90mm fans and a special practical design for heat dissipation, the unique carbon texture and appearance bring maximum freshness to the card.",
     "price": 329999,
     "category": "hardware",
-    "image": "./products/product16.png"
+    "image": "./src/assets/products/product16.png"
   },
   {
     "name": "NVIDIA RTX 3070 TI",
     "description": "The EVGA GeForce RTX 3070 Ti XC3 ULTRA GAMING 10GB graphics card is one of the latest from NVIDIA.",
     "price": 462200,
     "category": "hardware",
-    "image": "./products/product17.png"
+    "image": "./src/assets/products/product17.png"
   },
   {
     "name": "NVIDIA RTX 3080",
     "description": "The EVGA GeForce RTX 3080 Ti XC3 ULTRA GAMING 12GB GDDR6X Video Card features the latest from NVIDIA. Introducing the EVGA GeForce RTX 3080 Ti / RTX 3070 Ti series graphics cards - cards built and designed for gamers. The GeForce RTX 3080 Ti features 20% more VRAM compared to the GeForce RTX 3080, while the GeForce RTX 3070 Ti offers double the I/O data rate compared to the GeForce RTX 3070.",
     "price": 689999,
     "category": "hardware",
-    "image": "./products/product18.png"
+    "image": "./src/assets/products/product18.png"
   },
   {
     "name": "NVIDIA RTX 3090",
     "description": "Zotac NVIDIA GeForce RTX 3090 Trinity is the ultimate gaming graphics card. With Ampere technology, the second generation of NVIDIA's RTX architecture, the card features advanced RT Cores and Tensor Cores, new streaming multiprocessors, and high-speed G6 memory, providing the power needed to play the most demanding games.",
     "price": 844999,
     "category": "hardware",
-    "image": "./products/product19.png"
+    "image": "./src/assets/products/product19.png"
   }
 ]
