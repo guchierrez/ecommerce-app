@@ -25,6 +25,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Copy database file and assets
+        run: |
+          cp products.json dist/
+          cp -r src/assets dist/
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
