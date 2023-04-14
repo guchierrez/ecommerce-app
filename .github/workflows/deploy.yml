@@ -19,7 +19,7 @@ jobs:
         run: npm run build
 
       - name: Copy assets and products folders to dist directory
-        run: cp -R src/assets src/products dist/
+        run: cp -R src/assets /products dist/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
