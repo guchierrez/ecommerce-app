@@ -5,7 +5,7 @@ export function Login() {
         htmlFor="my-modal-1"
         className="cursor-pointer bg-zinc-800 bg-opacity-60 py-4 px-4 rounded-3xl hover:bg-opacity-100 transition-all duration-300"
       >
-        <img style={{ width: "20px" }} src="./assets/login.png"></img>
+        <img style={{ width: "20px" }} src="/assets/login.png"></img>
       </label>
       <input type="checkbox" id="my-modal-1" className="modal-toggle" />
       <div className="modal ">

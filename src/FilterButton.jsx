@@ -24,7 +24,7 @@ export function FilterButton({
       <img
         className="mx-auto"
         style={{ width: "20px" }}
-        src={`./assets/${imgSrc}.png`}
+        src={`/assets/${imgSrc}.png`}
       />
     </button>
   );

@@ -5,7 +5,7 @@ export function Cart() {
         htmlFor="my-modal-2"
         className="cursor-pointer bg-zinc-800 bg-opacity-60 py-4 px-4 rounded-3xl hover:bg-opacity-100 transition-all duration-300"
       >
-        <img style={{ width: "20px" }} src="./assets/cart.png"></img>
+        <img style={{ width: "20px" }} src="/assets/cart.png"></img>
       </label>
       <input type="checkbox" id="my-modal-2" className="modal-toggle" />
       <div className="modal">
