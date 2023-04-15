@@ -9,13 +9,15 @@ export function Navbar({
   selectedCategory,
   searchQuery,
   setSearchQuery,
+  cartProducts,
+  setCartProducts,
 }) {
   const [isNavbarHidden, setIsNavbarHidden] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
       const scrollY = window.scrollY;
-      setIsNavbarHidden(scrollY > 0);
+      setIsNavbarHidden(scrollY > 100);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -24,6 +26,7 @@ export function Navbar({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   {
     return (
       <header
@@ -42,7 +45,10 @@ export function Navbar({
             />
           </li>
           <li className="md:col-span-2 xs:col-span-4 col-span-5 flex gap-5 ml-auto">
-            <Cart />
+            <Cart
+              cartProducts={cartProducts}
+              setCartProducts={setCartProducts}
+            />
             <Login />
           </li>
         </ul>

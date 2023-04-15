@@ -17,7 +17,7 @@ export function FilterButton({
     <button
       data-category={category}
       className={`rounded-md font-medium cursor-pointer transition-all duration-300 ${
-        isSelected ? "opacity-60" : "hover:opacity-60"
+        isSelected ? "opacity-30" : "hover:opacity-30"
       } w-full`}
       onClick={handleClick}
     >

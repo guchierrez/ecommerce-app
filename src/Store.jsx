@@ -4,9 +4,19 @@ import { Product } from "./Product";
 import { Navbar } from "./Navbar";
 
 export function Store() {
+  const LOCAL_STORAGE_KEY = "ecommerce-app-guchierrez";
+
+  const storedValue = localStorage.getItem(LOCAL_STORAGE_KEY);
+
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [cartProducts, setCartProducts] =
+    storedValue == ![] ? useState(storedValue) : useState([]);
+
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(cartProducts));
+  }, [cartProducts]);
 
   useEffect(() => {
     fetch("./products.json")
@@ -15,6 +25,12 @@ export function Store() {
       .finally(() => {
         setIsLoading(false);
       });
+  }, []);
+
+  useEffect(() => {
+    if (storedValue) {
+      setCartProducts(JSON.parse(storedValue));
+    }
   }, []);
 
   const filteredProducts =
@@ -39,9 +55,11 @@ export function Store() {
         selectedCategory={selectedCategory}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
+        cartProducts={cartProducts}
+        setCartProducts={setCartProducts}
       />
 
-      <main className="md:pt-28 pt-48 py-11">
+      <main className="md:pt-28 pt-44">
         {isLoading === true ? (
           <div className="w-5/6 mx-auto text-center align-middle items-center p-11 ">
             <div
@@ -54,9 +72,17 @@ export function Store() {
             </div>
           </div>
         ) : (
-          <div className="bg-zinc-800 grid grid-cols-2 md:grid-cols-4 p-8  w-5/6 mx-auto gap-8 shadow-2xl">
+          <div className="bg-zinc-800 grid grid-cols-2 md:grid-cols-4 p-8  md:w-5/6 mx-auto gap-8 shadow-2xl">
             {searchedProducts.map((product) => {
-              return <Product key={crypto.randomUUID()} {...product} />;
+              return (
+                <Product
+                  key={crypto.randomUUID()}
+                  {...product}
+                  productsArray={products}
+                  setCartProducts={setCartProducts}
+                  cartProducts={cartProducts}
+                />
+              );
             })}
           </div>
         )}

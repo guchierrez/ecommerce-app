@@ -42,7 +42,7 @@ export function FilterButtons({ handleCategorySelect, selectedCategory }) {
   };
 
   return (
-    <div className="mx-auto bg-zinc-800 bg-opacity-60 py-4 px-4 rounded-3xl text-white flex gap-5 overflow-auto">
+    <div className="mx-auto bg-zinc-800 bg-opacity-60 hover:bg-opacity-100 transition-all duration-300 py-4 px-4 rounded-3xl text-white flex gap-5 overflow-auto">
       <FilterButton {...all} />
       <FilterButton {...pc} />
       <FilterButton {...hardware} />
