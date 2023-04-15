@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import "/src/styles/index.css";
 
 export function Product({
-  category,
   image,
   name,
   description,
@@ -13,6 +13,19 @@ export function Product({
   cartProducts,
 }) {
   if (hidden) return;
+
+  useEffect(() => {
+    const modalInput = document.getElementById(`my-modal-${id}`);
+    const body = document.body;
+
+    modalInput.addEventListener("change", () => {
+      if (modalInput.checked) {
+        body.classList.add("modal-open");
+      } else {
+        body.classList.remove("modal-open");
+      }
+    });
+  }, []);
 
   function handleClick(array, e) {
     const addedProduct = array.find(

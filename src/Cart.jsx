@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { EmptyCart } from "./EmptyCart";
+import "/src/styles/index.css";
 
 export function Cart({ cartProducts, setCartProducts }) {
   function handleRemove(array, e) {
@@ -7,14 +9,35 @@ export function Cart({ cartProducts, setCartProducts }) {
     setCartProducts(updatedCart);
   }
 
+  useEffect(() => {
+    const modalInput = document.getElementById("nav-modal-2");
+    const body = document.body;
+
+    modalInput.addEventListener("change", () => {
+      if (modalInput.checked) {
+        body.classList.add("modal-open");
+      } else {
+        body.classList.remove("modal-open");
+      }
+    });
+  }, []);
+
   return (
     <>
-      <label
-        htmlFor="nav-modal-2"
-        className="cursor-pointer bg-zinc-800 bg-opacity-60 py-4 px-4 rounded-3xl hover:bg-opacity-100 transition-all duration-300"
-      >
-        <img style={{ width: "20px" }} src="assets/cart.png"></img>
-      </label>
+      <div className="indicator">
+        <span className="indicator-item badge badge-secondary">
+          {cartProducts.reduce((acc, product) => {
+            return acc + product.quantity;
+          }, 0)}
+        </span>
+
+        <label
+          htmlFor="nav-modal-2"
+          className="cursor-pointer bg-zinc-800 bg-opacity-60 py-4 px-4 rounded-3xl hover:bg-opacity-100 transition-all duration-300"
+        >
+          <img style={{ width: "20px" }} src="assets/cart.png"></img>
+        </label>
+      </div>
       <input type="checkbox" id="nav-modal-2" className="modal-toggle" />
       <div className="modal">
         <div className="modal-box py-12 relative overflow-hidden bg-zinc-800 flex flex-col">

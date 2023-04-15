@@ -1,4 +1,20 @@
+import { useEffect } from "react";
+import "/src/styles/index.css";
+
 export function Login() {
+  useEffect(() => {
+    const modalInput = document.getElementById("nav-modal-1");
+    const body = document.body;
+
+    modalInput.addEventListener("change", () => {
+      if (modalInput.checked) {
+        body.classList.add("modal-open");
+      } else {
+        body.classList.remove("modal-open");
+      }
+    });
+  }, []);
+
   return (
     <>
       <label
